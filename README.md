@@ -44,4 +44,7 @@ Docs: https://greghesp.github.io/assistant-relay/docs/getting-started/configurat
 # Copy json credential file to RPi
 scp -P 12 client_secret_numbers.apps.googleusercontent.com.json pi@ipaddress:/home/pi/shawa/
 ```
-Doesn't show the auth code :(
+Doesn't show the auth code, shows a blank screen :(
+
+Issue fixed! The type of OAuth that is needed should be 'Other', and not Web. Went again through some of the Google config steps and then it worked - it should pop up a new tab to select account and the consent form. Then it is connected, and the Google Home will say something :D
+
