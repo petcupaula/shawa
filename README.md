@@ -72,14 +72,16 @@ Service homepage: https://ifttt.com/discover
 ## Python script for the "home brain" on the Raspberry Pi
 
 * Script to check for the MQTT "home_messaging" feed and when a message is coming, send it to Google Home to read aloud
+
+```
+python3 brainy.py
+```
+
 * Generate a brain with a personality (due to the limited time, random script)
 
 ```
-pip3 install flask
-pip3 install flask-cors
-pip3 install paho-mqtt
-
-python3 brainy.py
+nano talking_things.txt
+python3 moody.py
 ```
 
 ## Running stuff on RPi upon restart
@@ -91,5 +93,6 @@ npm run start
 
 # Start MQTT brain communication
 cd ~/shawa
-python3 brainy.py
+python3 brainy.py &
+python3 moody.py &
 ```
