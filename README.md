@@ -30,6 +30,9 @@ sudo npm run setup
 npm run start
 # The Assistant Relay page will be hosted at port :3000
 
+# Stop?
+#pm2 stop ./bin/www
+
 ```
 
 ## Configure Assistant Relay
@@ -41,4 +44,4 @@ Docs: https://greghesp.github.io/assistant-relay/docs/getting-started/configurat
 # Copy json credential file to RPi
 scp -P 12 client_secret_numbers.apps.googleusercontent.com.json pi@ipaddress:/home/pi/shawa/
 ```
-
+Doesn't show the auth code :(
