@@ -48,3 +48,9 @@ Doesn't show the auth code, shows a blank screen :(
 
 Issue fixed! The type of OAuth that is needed should be 'Other', and not Web. Went again through some of the Google config steps and then it worked - it should pop up a new tab to select account and the consent form. Then it is connected, and the Google Home will say something :D
 
+
+## Sending requests
+
+```
+curl -d '{"command":"hello","broadcast":true,"user":"robot"}' -H 'Content-Type: application/json'  http://ipaddress:3000/assistant
+```
