@@ -1,5 +1,8 @@
 # shawa
 
+Youtube demo video: https://youtu.be/yRTgMlEAdNM
+
+
 ## Install Assistant Relay on Raspberry Pi
 
 Docs: https://greghesp.github.io/assistant-relay/docs/getting-started/installation
