@@ -2,6 +2,9 @@
 
 Youtube demo video: https://youtu.be/yRTgMlEAdNM
 
+## Schematic
+
+<img src="SHAWa schematic.png" width="800">
 
 ## Install Assistant Relay on Raspberry Pi
 
