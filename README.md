@@ -54,3 +54,23 @@ Issue fixed! The type of OAuth that is needed should be 'Other', and not Web. We
 ```
 curl -d '{"command":"hello","broadcast":true,"user":"robot"}' -H 'Content-Type: application/json'  http://ipaddress:3000/assistant
 ```
+
+
+## Using AdafruitIO as an MQTT Pub/Sub system
+
+Service homepage: https://io.adafruit.com/
+
+* New feed, called "home_messaging"
+* Other services will be able to write to this one using IFTTT
+
+## IFTTT Setup
+
+Service homepage: https://ifttt.com/discover
+
+* Connect as many services as possible/available
+
+## Python script for the "home brain" on the Raspberry Pi
+
+* Script to check for the MQTT "home_messaging" feed and when a message is coming, send it to Google Home to read aloud
+* Generate a brain with a personality (due to the limited time, random script)
+
