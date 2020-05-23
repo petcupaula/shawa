@@ -74,3 +74,22 @@ Service homepage: https://ifttt.com/discover
 * Script to check for the MQTT "home_messaging" feed and when a message is coming, send it to Google Home to read aloud
 * Generate a brain with a personality (due to the limited time, random script)
 
+```
+pip3 install flask
+pip3 install flask-cors
+pip3 install paho-mqtt
+
+python3 brainy.py
+```
+
+## Running stuff on RPi upon restart
+
+```
+# Start Assistant Relay
+cd ~/shawa/assistant-relay
+npm run start
+
+# Start MQTT brain communication
+cd ~/shawa
+python3 brainy.py
+```
